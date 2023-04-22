@@ -1,0 +1,53 @@
+/* Clip-path */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+.users-cards {
+    /* min-height: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.user-card {
+    min-width: 400px;
+    width: 100px;
+    max-width: 600px;
+    min-height: 300px;
+    display: flex;
+    align-items: stretch;
+    background-color: azure;
+    margin-bottom: 20px;
+}
+.user-photo {
+    width: 60%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}
+
+.user-info {
+    margin: auto;  
+}
+
+/* columns */
+h3{
+    font-size: 3em;
+    column-span: all;
+    text-align: center;
+}
+.content {
+    /* max-width: 1200px; */
+    /* column-count: 3; */
+    /* column-width: 400px; */
+    columns: 3 400px;
+    column-rule: blue dotted 5px;
+    column-gap: 4em;
+    /* column-fill: auto; */
+    text-align: justify;
+}

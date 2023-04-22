@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(20) Practice 15.09.21</title>
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/practicStyle.css">
+</head>
+<body>
+    <!-- PRACTICE 15.09.21  -->
+    <div class="container">
+        <section class="border">
+            <form action="/test-action" method="GET" class="form">
+                <fieldset>
+                        <legend class="legend">register</legend>
+                        <p>Create your account. It's free and only takes a minute.</p>
+                    <div class="user-name margin">
+                            <input autofocus 
+                            type="text" 
+                            placeholder="First name"
+                            name="firstName"
+                            required
+                            pattern="^[A-Z][a-z0-9]{2,15}$">
+            
+                            <input type="text" 
+                            placeholder="Last name"
+                            name="lastName">
+                    </div>
+                    <div class="flex margin">
+                        <input type="email" 
+                        placeholder="Email"
+                        name="email"
+                        required
+                        autocomplete="email" >
+
+                        <input type="password" placeholder="Password">
+
+                        <input type="password" placeholder="Confirm Password">
+
+                        <label>
+                            <input value="JS" type="checkbox" name="course">  I accept the <span>Terms of Use</span> & <span>Privacy Policy</span>
+                        </label>
+
+                        <button class="btn" type="submit" name="submit_button" value="main_button">Register Now</button>
+                    </div>    
+                </fieldset>
+            </form>
+        </section>
+
+        <div class="exist-account">
+            <p>Already have an account? <span>Sign in</span></p>
+        </div>
+    </div> 
+</body>
+</html>
